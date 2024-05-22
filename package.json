@@ -1,0 +1,50 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "upload": "vite build --mode upload",
+    "build-only": "vite build --mode development",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@leanix/reporting": "^0.4.120",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@tsconfig/node18": "^2.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^18.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/tsconfig": "^0.3.2",
+    "autoprefixer": "^10.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "jest": "^29.7.0",
+    "npm-run-all": "^4.0.0",
+    "postcss": "^8.0.0",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.0.0",
+    "ts-jest": "^29.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0",
+    "vite-plugin-lxr": "^4.0.0",
+    "vue-tsc": "^1.0.0"
+  },
+  "name": "lxr-spike-performance-01",
+  "author": "",
+  "description": "",
+  "leanixReport": {
+    "id": "net.leanix.reporting.spike.performance.01",
+    "title": "",
+    "defaultConfig": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.node.json",
+  "include": ["test/**/*"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["@types/jest", "node"],
+    "paths": {
+      "data/*": ["./test/data/*"]
+    }
+  }
+}
